@@ -3,6 +3,8 @@
   <p>Food Search</p>
   <input @keyup.enter="startSearch" v-model="data.food" placeholder="food">
   <p>Search For: {{ data.food}}</p>
+  <div>Today's date: 2021-03-25</div>
+  <div>Available at:</div>
   <li v-for="hall in data.diningHallArray" :key="hall.name">
     {{ hall.name }}
   </li>
